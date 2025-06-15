@@ -55,8 +55,8 @@ function loadThumbnail(index) {
     return new Promise((resolve) => {
         const thumbImg = new Image();
         thumbImg.crossOrigin = 'Anonymous';
-        const thumbPath = `images/thumbs/${index}.jpg`;
-        const fullPath = `images/${index}.jpg`;
+        const thumbPath = `Images/thumbs/${index}.jpg`;
+        const fullPath = `Images/${index}.jpg`;
         console.log('Trying to load thumbnail:', thumbPath);
         thumbImg.src = thumbPath;
 
