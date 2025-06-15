@@ -81,7 +81,7 @@ function loadThumbnail(index) {
 
         function createImageElement(thumbImg, index, resolve) {
             const imgElement = document.createElement('img');
-            imgElement.dataset.large = `images/${index}.jpg`;
+            imgElement.dataset.large = `Images/${index}.jpg`;
             imgElement.src = thumbImg.src;
             imgElement.alt = `Image ${index}`;
             imgElement.setAttribute('data-date', '');
