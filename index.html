@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一周年快乐！</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="readme_img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="readme_img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="readme_img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="readme_img/favicon//site.webmanifest">
+    <style>
+    .photo-caption {
+        font-family: 'Ma Shan Zheng', cursive, '微软雅黑', sans-serif;
+        font-size: 2.2vw;
+        text-align: center;
+        margin: 20px 0 10px 0;
+        word-break: break-all;
+        white-space: pre-line;
+        color: #fff;
+    }
+    .footer-text {
+        color: #000;
+        font-size: 2.2vw;
+        text-align: center;
+        margin: 20px 0 10px 0;
+        font-family: 'Ma Shan Zheng', cursive, '微软雅黑', sans-serif;
+    }
+    .flamingo-bg {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 540px;
+        opacity: 0.85;
+        z-index: 10;
+        pointer-events: none;
+    }
+    .we-bg {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 540px;
+        opacity: 0.85;
+        z-index: 10;
+        pointer-events: none;
+    }
+    </style>
+</head>
+<body>
+    <img src="background/flamingo.png" class="flamingo-bg" alt="火烈鸟" />
+    <img src="background/we.png" class="we-bg" alt="我们" />
+
+    <canvas id="heartCanvas"></canvas>
+
+    <nav>
+        <div class="container">
+            <h1>Love Story</h1>
+        </div>
+    </nav>
+
+    <main>
+        <section id="name">
+            <h2>Steven & Sherry</h2> <!--**Name**-->
+        </section>
+
+        <section id="timer">
+            <audio id="bgm" src="music/简单爱-周杰伦.mp3" controls autoplay loop></audio>
+            <h2><span id="loveDays"></span> Days</h2>
+        </section>
+
+        <section id="dates">
+            <div class="date-item">
+                <p>1998.03.08</p> <!--**Birthday**-->
+                <span>His Birthday</span>
+            </div>
+            <div class="date-item">
+                <p>1999.09.22</p> <!--**Birthday**-->
+                <span>Her Birthday</span>
+            </div>
+            <div class="date-item">
+                <p id="loveDate">2024.06.15</p> <!--**Love date**-->
+                <span>Anniversary</span>
+            </div>
+        </section>
+
+        <section id="gallery">
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">未完待续...</p>
+        </div>
+    </footer>
+
+    <div id="popup">
+        <span id="closeBtn">&times;</span>
+        <p id="imgDate"></p>
+        <img id="popupImg" src="" alt="Large Image">
+        <div id="photoCaption" class="photo-caption"></div>
+    </div>
+
+    <div id="leftArrow" class="arrow">❮</div>
+    <div id="rightArrow" class="arrow">❯</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
+    <script src="script.js"></script>
+    <script src="hearts.js"></script>
+</body>
+</html>
